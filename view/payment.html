@@ -1,0 +1,427 @@
+<!-- <?php 
+include('header.php');
+?> -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device=width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="Rahul Srinivas">
+
+        <title>Sparklean Laundry Services </title>
+
+
+        <!-- Font Awesome Icons-->
+        <link  rel="stylesheet" type="text/css" href="../vendor/fontawesome/css/all.min.css">
+
+        <!-- Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Muli:300i,400,400i,600,700,800&display=swap" rel="stylesheet">
+        <!-- Bootstrap CSS-->
+        <link  rel="stylesheet" type="text/css" href="../vendor/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../vendor/bootstrap/css/bootstrap.min.css">
+        
+        <!-- Main Style Sheet-->
+        <Link rel="stylesheet" type="text/css" href="../vendor/css/style.css">
+
+        <!-- Bootstrap core JavaScript-->
+        <script src="../vendor/jquery/jquery.min.js"></script>
+        <script src="../vendor/js/app.js"></script>
+
+    </head>
+
+    <body>
+
+
+    <div class="">
+        <!-----------------------
+            NAVBAR
+        ------------------------>
+        <section id="" class="plan">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <a class="navbar-brand" href="#"><img src="../img/logo.png" style="width: 88px; height: 50px;"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse ml-2" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto links">
+                    <li class="nav-item mr-1">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item mr-1">
+                      <a class="nav-link" href="#">Why Laundry Matters</a>
+                    </li>
+                    <li class="nav-item mr-1">
+                        <a class="nav-link" href="#">How it Works</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Laundry Plans</a>
+                    </li>
+                  </ul>
+                  <ul class="navbar-nav mr-5">
+                    <li class="nav-item mr-3"> 
+                        <a class="nav-link sign-in" href="#">Sign in</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-greenn plan-signup my-sm-0 mr-5" type="submit">Sign up</button>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
+        </section> 
+        
+        <!-- <div class="text-center">
+            <div class="container mt-4 pt-4">
+                <div class="container h-100">
+                    <div class="col-lg-12 my-auto px-5">
+                        <div class="mx-auto about">
+                            <h1 class="mb-2" style="font-size: 38px;">Laundry Plans</h1>
+                            <p class="mb-4 pb-0 laund">Simple plans for everyone! 20 to 25 pounds of laundry each week </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  -->
+
+        <div class="container text-center text-md-left">
+            <div class="row">
+                <div class="col-md-8 mx-auto mt-5">
+                    <div class="card pay-card">
+                        <div class="card-body pay-body">
+                            <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active payment" id="pills-tab" data-toggle="pill" href="#pills-customize" role="tab" aria-controls="pills-customize" aria-selected="true">Customize</a>
+                                </li>
+                                <li class="nav-item mx-4">
+                                    <a class="nav-link" role="tab"><i class="ml-2 fa fa-angle-right" style="color:#A5A5A5;"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link payment" id="pills-tab" data-toggle="pill" href="#pills-address" role="tab" aria-controls="pills-address" aria-selected="false">Lorem</a>
+                                </li>
+                                <li class="nav-item mx-4">
+                                    <a class="nav-link" role="tab"><i class="ml-2 fa fa-angle-right" style="color:#A5A5A5;"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link payment" id="pills-tab" data-toggle="pill" href="#pills-delivery" role="tab" aria-controls="pills-delivery" aria-selected="false">Delivery</a>
+                                </li>
+                                <li class="nav-item mx-4">
+                                    <a class="nav-link" role="tab"><i class="ml-2 fa fa-angle-right" style="color:#A5A5A5;"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link payment" id="pills-tab" data-toggle="pill" href="#pills-payment" role="tab" aria-controls="pills-payment" aria-selected="false">Payment</a>
+                                </li>
+                              </ul>
+                        </div>
+                    </div>
+
+                    <div class="card add-card mt-4">
+                        <div class="card-body add-body">
+                            <div class=" row ">
+                                <div class="col-sm-5 col-md-6">Pickup Point</div>
+                                <div class="col-sm-5  col-md-6 ">On campus, Hostel Lobby <a class="card-link ml-3" href="#" role="tab"> Change</a></div>
+                              </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="card pay-card mt-4">
+                        <div class="card-body pay-body my-">
+                              <div class="tab-content" id="pills-tabContent">
+                                <div class="container tab-pane fade show active" id="pills-customize" role="tabpanel" aria-labelledby="pills-customize-tab">
+
+                                </div>
+
+                                <div class="tab-pane fade" id="pills-address" role="tabpanel" aria-labelledby="pills-address-tab">...</div>
+
+                                <div class="tab-pane fade" id="pills-delivery" role="tabpanel" aria-labelledby="pills-delivery-tab">...</div>
+
+                                <div class="tab-pane fade" id="pills-payment" role="tabpanel" aria-labelledby="pills-payment-tab">
+                                    <div class="row">
+                
+                                        <div class="col-md-6 mx-auto text-center">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-check my-2">
+                                                        <input class="form-check-input" name="payment" value="momo" type="radio" data-toggle="collapse" data-target="#momo" aria-expanded="false" aria-controls="#momo">
+                                                        <input type="hidden" value="test" id='hiding_data'>
+                                                        <label class="form-check-label" for="tab-momo">Mobile money</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-check my-2">
+                                                        <input class="form-check-input" name="payment" value="visa" type="radio" data-toggle="collapse" data-target="#visa" aria-expanded="false" aria-controls="#momo">
+                                                        <label class="form-check-label" for="tab-visa">Visa</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+
+
+                    <div class="collapse " id="momo">
+                        <div class="card pay-card mt-4">
+                            <div class="payment-header">
+                                Mobile money
+                            </div>
+                            <div class="card-body pay-body my-4">
+                                <div class="tab-content" id="pills-tabContent">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="inputOperator">Select operator </label>
+                                            <select id="inputState" class="form-control my-2">
+                                                <option selected>YY</option>
+                                                <option>...</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-4">
+                                                <label for="inputState">Expiry date</label>
+                                                <select id="inputState" class="form-control">
+                                                <option selected>MM</option>
+                                                <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-8">
+                                                <label for="inputZip">CVV</label>
+                                                <input type="text" class="form-control" id="inputZip">
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Confirm Payment</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                                
+                    </div>
+                    <div class="collapse" id="visa">
+                        <div class="card pay-card mt-4">
+                            <div class="payment-header">
+                                Credit / Debit card
+                            </div>
+                            <div class="card-body pay-body my-4">
+                                <div class="tab-content" id="pills-tabContent">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="inputCard">Card number</label>
+                                            <input type="text" class="form-control" id="inputCard" placeholder="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputCard">Name on number</label>
+                                            <input type="text" class="form-control" id="inputCard" placeholder="">
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-5">
+                                                <label for="inputState">Expiry date</label>
+                                                <select id="inputState" class="form-control">
+                                                <option selected>MM</option>
+                                                <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-5">
+                                                <label for="inputState"></label>
+                                                <select id="inputState" class="form-control my-2">
+                                                <option selected>YY</option>
+                                                <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-2">
+                                                <label for="inputZip">CVV</label>
+                                                <input type="text" class="form-control" id="inputZip">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                <label class="form-check-label" for="gridCheck">
+                                                Check me out
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Confirm Payment</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+        
+                <div class="col-md-4 mx-auto mt-5">
+                    <div class="container card pay-card">
+                        <div class="payment-header my-3 text-center">
+                            <h6>Order Summary</h6>
+                        </div>
+                       
+                        <div class="row">
+                            <div class="col-sm-5 col-md-6 mb-2">Date</div>
+                            <div class="col-sm-5  col-md-6 text-right">30 Jan 2020</div>
+                            <div class="col-sm-5 col-md-6 mb-2">Time</div>
+                            <div class="col-sm-5  col-md-6 text-right">02:42 PM</div>
+                            <div class="col-sm-5 col-md-6 mb-2">Total no of items</div>
+                            <div class="col-sm-5  col-md-6 text-right">23</div>
+                        </div>
+
+                        <hr class="dotted">
+
+                        <div class="row">
+                            <div class="col-sm-5 col-md-12 mb-3"><h6>Items</h6></div>
+                            <div class="col-sm-5 col-md-6 mb-2">Tops</div>
+                            <div class="col-sm-5  col-md-6 text-right">5</div>
+                            <div class="col-sm-5 col-md-6 mb-2">Underwears</div>
+                            <div class="col-sm-5  col-md-6 text-right">7</div>
+                            <div class="col-sm-5 col-md-6 mb-2">Shorts</div>
+                            <div class="col-sm-5  col-md-6 text-right">3</div>
+                            <div class="col-sm-5 col-md-6 mb-2">Pants</div>
+                            <div class="col-sm-5  col-md-6 text-right">8</div>
+                            <div class="col-sm-5 col-md-6 mb-2">Others</div>
+                            <div class="col-sm-5  col-md-6 text-right">2</div>
+                        </div>
+
+                        <hr class="dotted">
+
+                        <div class="row">
+                            <div class="col-sm-5 col-md-12"><h6></h6></div>
+                            <div class="col-sm-5 col-md-6">Subtotal</div>
+                            <div class="col-sm-5  col-md-6 text-right">5</div>
+                            <div class="col-sm-5  col-md-12 mt-3" id="coup-coupon"> 
+                                <div class="form-label-group">
+                                    <input type="text" name="coupon" id="coupon" class="form-control" placeholder="Enter Coupon" value="">
+                                    <label for="coupon">Enter coupon</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-5  col-md-12 mt-2 mb-3">
+                                <button  id="btn-coupon" class="btn btn-coupon">Add coupon</button>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-sm-5 col-md-6 mb-2">Total amount</div>
+                            <div class="col-sm-5  col-md-6 text-right">5</div>
+                            <div class="col-sm-5 col-md-6 mb-2">Coupoun applied</div>
+                            <div class="col-sm-5  col-md-6 text-right">2</div>
+                            <div class="col-sm-5 col-md-6 mb-2">Amount to be paid</div>
+                            <div class="col-sm-5  col-md-6 text-right">3</div>
+                        </div>
+                    </div>
+
+                </div>
+        
+            </div>
+        </div>
+
+
+
+
+
+    
+
+        <hr class="">
+        <div class="container text-center align-items-center">
+            <div class="row">
+                <div class="col-md-2">
+                    
+                </div>
+                <div class="col-md-4">
+                    <p class="mt-3" style=" font-weight: 600; font-size: 24px;">We're here to help.<br><span style=" font-weight: 400; font-size: 16px; color: #A5A5A5;">Real people. Real friendly.</span></p>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact mt-4">
+                        <div class="row mt-3">
+                            <div class="col-2">
+                                <i class="fa fa-phone-alt"></i>
+                            </div>
+                            <div class="col-10 ">
+                                <p class="text-cente mt-1" style="font-size: 12px; font-weight: 600;">CALL US AT (+233)123 456 789</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
+        </div>
+        <!-- <hr> -->
+
+
+        <!-- Footer -->
+        <footer class="page-footer font-small">
+            <hr>
+            <div class="container text-center text-md-left">
+                <div class="row">
+
+                    <div class="col-md-4 mx-auto mt-5">
+                        <a class="navbar-brand" href="#"><img src="../img/logo.png" style="width: 88px; height: 60px;"></a>
+                        <p class="dj font-weight-light">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        </p>
+                    </div>
+
+                    <hr class="clearfix w-100 d-md-none">
+            
+                    <div class="col-md-3 mx-auto mt-5 foot">
+                        <h6 class="font-weight-bold text-uppercase h6 mt-3 mb-4 footer-header">Site Map</h6>
+                        <ul class="list-unstyled">
+                            <li>
+                            <a class="font-weight-light" href="#">Home</a>
+                            </li>
+                            <li>
+                            <a class="font-weight-light" href="#">Why Laundry Matters</a>
+                            </li>
+                            <li>
+                            <a class="font-weight-light" href="#">Laundry Plans</a>
+                            </li>
+                        </ul>
+                    </div>
+            
+            
+                    <hr class="clearfix w-100 d-md-none">
+            
+                    <div class="col-md-3 mx-auto mt-5">
+                        <h6 class="font-weight-bold text-uppercase h6 mt-3 mb-4 footer-header">Contact Us</h6>
+                        <p class="dj font-weight-light">1 University Avenue Berekuso<br><span>Eastern Region, Ghana</span></p>
+
+                        <ul class="list-inline ml-auto">
+                            <li class="list-inline-item">
+                                <a class="" href="#"> <i class="fab fa-facebook-f fa-2x circle-icon"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="" href="#"> <i class="fab fa-instagram fa-2x"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="" href="#"> <i class="fab fa-twitter fa-2x"></i></a>
+                            </li>
+                        </ul>
+
+                    </div>
+            
+                </div>
+            </div>
+        
+        </footer>
+
+        <!-- Footer -->
+
+
+    </div>
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+
+    </body>
+
+
+
+</html>
