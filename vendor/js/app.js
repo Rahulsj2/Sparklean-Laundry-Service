@@ -42,6 +42,26 @@ $(document).ready(function () {
 });
 
 
+
+
+$('.continue').click(function(){
+    // console.log('hi');
+    // ul = document.querySelector("#pills-tab > li.nav-item.done").nextElementSibling.nextElementSibling.getElementsByClassName('nav-link');
+    // $('#pills-tab > li.nav-item.done').nextElementSibling.nextElementSibling.trigger('click');
+    // console.log(ul);
+    $('#pills-tab > li.nav-item.done').next().find('a').trigger('click');
+    // ul.click();
+    
+    // ul.next('li').find('a').trigger('click');
+    // console.log("Clicked")
+  });
+  
+    $('.back').click(function(){
+    // $('.nav-tabs > .done').prev('li').find('a').trigger('click');
+    // console.log("Clicked")
+  });
+
+
 $(function() {
 
     $("#coup-coupon").hide();
@@ -51,6 +71,9 @@ $(function() {
     });
 });
 
+$('.continue').click(function(){
+    $('.nav-pills > .active').next('li').find('a').trigger('click')
+});
 
 
 

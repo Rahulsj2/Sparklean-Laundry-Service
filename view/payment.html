@@ -28,6 +28,7 @@ include('header.php');
         <!-- Bootstrap core JavaScript-->
         <script src="../vendor/jquery/jquery.min.js"></script>
         <script src="../vendor/js/app.js"></script>
+        
 
     </head>
 
@@ -91,26 +92,26 @@ include('header.php');
                     <div class="card pay-card">
                         <div class="card-body pay-body">
                             <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active payment" id="pills-tab" data-toggle="pill" href="#pills-customize" role="tab" aria-controls="pills-customize" aria-selected="true">Customize</a>
+                                <li class="nav-item done">
+                                    <a class="nav-link active payment" href="#contact" aria-controls="contact-details" role="tab"  data-toggle="pill"   aria-expanded="true">Contact Details</a>
                                 </li>
-                                <li class="nav-item mx-4">
+                                <li class="nav-item mx-2">
                                     <a class="nav-link" role="tab"><i class="ml-2 fa fa-angle-right" style="color:#A5A5A5;"></i></a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link payment" id="pills-tab" data-toggle="pill" href="#pills-address" role="tab" aria-controls="pills-address" aria-selected="false">Lorem</a>
+                                  <a class="nav-link payment" href="#address" aria-controls="delivery-address" role="tab" data-toggle="pill" aria-expanded="false"> Delivery Address</a>
                                 </li>
-                                <li class="nav-item mx-4">
+                                <li class="nav-item mx-2">
                                     <a class="nav-link" role="tab"><i class="ml-2 fa fa-angle-right" style="color:#A5A5A5;"></i></a>
                                 </li>
-                                <li class="nav-item">
+                                <!-- <li class="nav-item">
                                   <a class="nav-link payment" id="pills-tab" data-toggle="pill" href="#pills-delivery" role="tab" aria-controls="pills-delivery" aria-selected="false">Delivery</a>
                                 </li>
-                                <li class="nav-item mx-4">
+                                <li class="nav-item mx-3">
                                     <a class="nav-link" role="tab"><i class="ml-2 fa fa-angle-right" style="color:#A5A5A5;"></i></a>
-                                </li>
+                                </li> -->
                                 <li class="nav-item">
-                                  <a class="nav-link payment" id="pills-tab" data-toggle="pill" href="#pills-payment" role="tab" aria-controls="pills-payment" aria-selected="false">Payment</a>
+                                  <a class="nav-link payment" href="#payment" aria-controls="payment-mode" role="tab" data-toggle="pill" aria-expanded="false">Payment Method &amp Details</a>
                                 </li>
                               </ul>
                         </div>
@@ -130,15 +131,86 @@ include('header.php');
                     <div class="card pay-card mt-4">
                         <div class="card-body pay-body my-">
                               <div class="tab-content" id="pills-tabContent">
-                                <div class="container tab-pane fade show active" id="pills-customize" role="tabpanel" aria-labelledby="pills-customize-tab">
-
+                                <div class="container tab-pane fade show active" id="contact" role="tabpanel" aria-labelledby="pills-customize-tab">
+                                    <form class=" my-4">
+                                        <div class="form-group">
+                                            <label for="inputCard">Frist name</label>
+                                            <input type="text" class="form-control" id="inputCard" placeholder="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputCard">Last name</label>
+                                            <input type="text" class="form-control" id="inputCard" placeholder="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputCard">Email address</label>
+                                            <input type="text" class="form-control" id="inputCard" placeholder="">
+                                        </div>
+                                        <a class="btn btn-primary continue white">Continue</a>
+                                    </form>
                                 </div>
 
-                                <div class="tab-pane fade" id="pills-address" role="tabpanel" aria-labelledby="pills-address-tab">...</div>
+                                <div class="tab-pane fade" id="address" role="tabpanel" aria-labelledby="pills-address-tab">
+                                    <form class=" my-4">
+                                        <div class="form-group">
+                                            <label for="inputCard">Hostel name</label>
+                                            <input type="text" class="form-control" id="inputCard" placeholder="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputCard">Pickup date</label>
+                                            <input type="text" class="form-control" id="inputCard" placeholder="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputCard">Pickup time</label>
+                                            <input type="text" class="form-control" id="inputCard" placeholder="">
+                                        </div>
+                                        <a class="btn btn-primary back white">Go Back</a>
+                                        <a class="btn btn-primary continue white">Continue</a>
+                                    </form>
+                                </div>
 
-                                <div class="tab-pane fade" id="pills-delivery" role="tabpanel" aria-labelledby="pills-delivery-tab">...</div>
+                                <!-- <div class="tab-pane fade" id="pills-delivery" role="tabpanel" aria-labelledby="pills-delivery-tab">
+                                    <form class=" my-4">
+                                        <div class="form-group">
+                                            <label for="inputCard">Card number</label>
+                                            <input type="text" class="form-control" id="inputCard" placeholder="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputCard">Name on number</label>
+                                            <input type="text" class="form-control" id="inputCard" placeholder="">
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-5">
+                                                <label for="inputState">Expiry date</label>
+                                                <select id="inputState" class="form-control">
+                                                <option selected>MM</option>
+                                                <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-5">
+                                                <label for="inputState"></label>
+                                                <select id="inputState" class="form-control my-2">
+                                                <option selected>YY</option>
+                                                <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-2">
+                                                <label for="inputZip">CVV</label>
+                                                <input type="text" class="form-control" id="inputZip">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                <label class="form-check-label" for="gridCheck">
+                                                Check me out
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Confirm Payment</button>
+                                    </form>
+                                </div> -->
 
-                                <div class="tab-pane fade" id="pills-payment" role="tabpanel" aria-labelledby="pills-payment-tab">
+                                <div class="tab-pane fade" id="payment" role="tabpanel" aria-labelledby="pills-payment-tab">
                                     <div class="row">
                 
                                         <div class="col-md-6 mx-auto text-center">
@@ -152,7 +224,7 @@ include('header.php');
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-check my-2">
-                                                        <input class="form-check-input" name="payment" value="visa" type="radio" data-toggle="collapse" data-target="#visa" aria-expanded="false" aria-controls="#momo">
+                                                        <input class="form-check-input" name="payment" value="visa" type="radio" data-toggle="collapse" data-target="#visa" aria-expanded="false" aria-controls="#visa">
                                                         <label class="form-check-label" for="tab-visa">Visa</label>
                                                     </div>
                                                 </div>
@@ -177,23 +249,23 @@ include('header.php');
                                             <label for="inputOperator">Select operator </label>
                                             <select id="inputState" class="form-control my-2">
                                                 <option selected>YY</option>
-                                                <option>...</option>
+                                                <option>MTN</option>
+                                                <option>Vodafone</option>
+                                                <option>AirtelTigo</option>
                                             </select>
                                         </div>
                                         <div class="form-row">
                                             <div class="form-group col-md-4">
-                                                <label for="inputState">Expiry date</label>
-                                                <select id="inputState" class="form-control">
-                                                <option selected>MM</option>
-                                                <option>...</option>
-                                                </select>
+                                                <label for="inputZip">Phone number</label>
+                                                <input type="text" class="form-control" id="inputZip" value="+233" disabled>
                                             </div>
-                                            <div class="form-group col-md-8">
-                                                <label for="inputZip">CVV</label>
-                                                <input type="text" class="form-control" id="inputZip">
+                                            <div class="form-group col-md-8 mt-2">
+                                                <!-- <label for="inputZip"></label> -->
+                                                <input type="text" class="form-control mt-4" id="inputZip">
                                             </div>
                                         </div>
-                                        <button type="submit" class="btn btn-primary">Confirm Payment</button>
+                                        <a class="btn btn-primary back white">Go Back</a>
+                                        <a class="btn btn-primary continue white">Place Order</a>
                                     </form>
                                 </div>
                             </div>
@@ -244,7 +316,8 @@ include('header.php');
                                                 </label>
                                             </div>
                                         </div>
-                                        <button type="submit" class="btn btn-primary">Confirm Payment</button>
+                                        <a class="btn btn-primary back white">Go Back</a>
+                                        <a class="btn btn-primary continue white">Place Order</a>
                                     </form>
                                 </div>
                             </div>
@@ -272,7 +345,7 @@ include('header.php');
                         <hr class="dotted">
 
                         <div class="row">
-                            <div class="col-sm-5 col-md-12 mb-3"><h6>Items</h6></div>
+                            <div class="col-sm-12 col-md-12 mb-3"><h6>Items</h6></div>
                             <div class="col-sm-5 col-md-6 mb-2">Tops</div>
                             <div class="col-sm-5  col-md-6 text-right">5</div>
                             <div class="col-sm-5 col-md-6 mb-2">Underwears</div>
@@ -288,16 +361,15 @@ include('header.php');
                         <hr class="dotted">
 
                         <div class="row">
-                            <div class="col-sm-5 col-md-12"><h6></h6></div>
                             <div class="col-sm-5 col-md-6">Subtotal</div>
                             <div class="col-sm-5  col-md-6 text-right">5</div>
-                            <div class="col-sm-5  col-md-12 mt-3" id="coup-coupon"> 
+                            <div class="col-sm-12 col-md-12 mt-3" id="coup-coupon"> 
                                 <div class="form-label-group">
                                     <input type="text" name="coupon" id="coupon" class="form-control" placeholder="Enter Coupon" value="">
                                     <label for="coupon">Enter coupon</label>
                                 </div>
                             </div>
-                            <div class="col-sm-5  col-md-12 mt-2 mb-3">
+                            <div class="col-sm-12 col-md-12 mt-2 mb-3">
                                 <button  id="btn-coupon" class="btn btn-coupon">Add coupon</button>
                             </div>
                         </div>
@@ -414,6 +486,7 @@ include('header.php');
 
 
     <!-- Bootstrap core JavaScript-->
+    <script src="../vendor/js/app.js"></script>
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
