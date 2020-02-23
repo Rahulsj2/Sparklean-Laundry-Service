@@ -1,5 +1,5 @@
-<!DOCTYPE php>
-<php lang="en">
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device=width, initial-scale=1, shrink-to-fit=no">
@@ -29,43 +29,21 @@
 
     <body style="overflow-y: hidden;">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-            <a class="navbar-brand" href="../index.php"><img src="../img/logo.png" style="width: 88px; height: 50px;"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-        
-            <div class="collapse navbar-collapse ml-2" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto links">
-                <li class="nav-item mr-1">
-                    <a class="nav-link" href="../index.php">Home</a>
-                </li>
-                <li class="nav-item mr-1">
-                  <a class="nav-link" href="../index.php">Why Laundry Matters</a>
-                </li>
-                <li class="nav-item mr-1">
-                    <a class="nav-link" href="../index.php">How it Works</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="plans.php">Laundry Plans</a>
-                </li>
-              </ul>
-              <!-- <ul class="navbar-nav mr-5">
-                <li class="nav-item mr-3"> 
-                    <a class="nav-link sign-in" href="#">Sign in</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-greenn plan-signup my-sm-0 mr-5" href="signup.php">Sign up</a>
-                </li>
-              </ul> -->
-            </div>
-        </nav>
 
 
         <div class="container-fluid">
             <div class="row">
                 <div class=" d-none d-md-flex col-lg-5 bg-image2"></div>
                 <div class="col-md-8 col-lg-7">
+                    <nav class="navbar navbar-expand-lg mt-4">
+                        <div class="collapse navbar-collapse ml-2" id="navbarSupportedContent">
+                            <ul class="navbar mr-auto">
+                                <li class="nav-item mr-1">
+                                    <a class="nav-link " href="../index.php"><i class="mr-2 fa fa-arrow-left" style="font-size: 14px"></i>Back</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                     <div class="login d-flex align-items-center">
                     <div class="container">
                         <div class="row">
@@ -106,4 +84,4 @@
             </div>
         </footer> -->
     </body>
-</php>
+</html>

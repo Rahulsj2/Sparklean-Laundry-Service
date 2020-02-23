@@ -116,6 +116,10 @@ html, body{
   border-bottom: 2px solid #A6CE39;
 }
 
+.back{
+  text-decoration: none !important;
+}
+
 .navbar-nav .sign-in {
   font-weight: 400 !important;
   border-bottom: none !important;
