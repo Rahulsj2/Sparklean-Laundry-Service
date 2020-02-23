@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE php>
+<php lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device=width, initial-scale=1, shrink-to-fit=no">
@@ -30,7 +30,7 @@
     <body style="overflow-y: hidden;">
 
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-            <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" style="width: 88px; height: 50px;"></a>
+            <a class="navbar-brand" href="../index.php"><img src="../img/logo.png" style="width: 88px; height: 50px;"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -38,16 +38,16 @@
             <div class="collapse navbar-collapse ml-2" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto links">
                 <li class="nav-item mr-1">
-                    <a class="nav-link" href="../index.html">Home</a>
+                    <a class="nav-link" href="../index.php">Home</a>
                 </li>
                 <li class="nav-item mr-1">
-                  <a class="nav-link" href="../index.html">Why Laundry Matters</a>
+                  <a class="nav-link" href="../index.php">Why Laundry Matters</a>
                 </li>
                 <li class="nav-item mr-1">
-                    <a class="nav-link" href="../index.html">How it Works</a>
+                    <a class="nav-link" href="../index.php">How it Works</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="plans.html">Laundry Plans</a>
+                  <a class="nav-link" href="plans.php">Laundry Plans</a>
                 </li>
               </ul>
               <!-- <ul class="navbar-nav mr-5">
@@ -55,7 +55,7 @@
                     <a class="nav-link sign-in" href="#">Sign in</a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn btn-greenn plan-signup my-sm-0 mr-5" href="signup.html">Sign up</a>
+                    <a class="btn btn-greenn plan-signup my-sm-0 mr-5" href="signup.php">Sign up</a>
                 </li>
               </ul> -->
             </div>
@@ -74,30 +74,20 @@
                             <form method="post" class="all">
                                 <div class="form-label-group">
                                 </div>
-
-
                                 <div class="form-label-group my-4">
                                     <input type="email" name="email" id="email" class="form-control" placeholder="Email address" value=""  required autofocus>
-                                    <!-- <span id="email_error" class ="form-error"></span> -->
                                     <label for="email">Email address</label>
                                 </div>
 
                                 <div class="form-label-group my-4">
                                     <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
-                                    <!-- <span id="password_error" class ="form-error"></span> -->
                                     <label for="password">Password</label>
                                 </div>
 
-
-                
-                                <!-- <div class="custom-control custom-checkbox mb-3">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                    <label class="custom-control-label" for="customCheck1">Remember password</label>
-                                </div> -->
                                 <button class="btn btn-lg btn-primary btn-block btn-login font-weight-bold mb-3 text-center offset-3 mt-5" name="submit" type="submit">Continue</button>
                                 <div class="text-center">
-                                    <a class="small " href="reset.html">Forgot password?</a>
-                                    <a class="small " href="signup.html">Don't have an account?</a>
+                                    <a class="small " href="reset.php">Forgot password?</a>
+                                    <a class="small " href="signup.php">Don't have an account?</a>
                                 </div>
                             </form>
                         </div>
@@ -116,4 +106,4 @@
             </div>
         </footer> -->
     </body>
-</html>
+</php>

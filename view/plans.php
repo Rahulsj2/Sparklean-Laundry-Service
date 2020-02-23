@@ -2,8 +2,8 @@
 include('header.php');
 ?> -->
 
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE php>
+<php lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device=width, initial-scale=1, shrink-to-fit=no">
@@ -40,7 +40,7 @@ include('header.php');
         ------------------------>
         <section id="" class="plan">
             <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" style="width: 88px; height: 50px;"></a>
+                <a class="navbar-brand" href="../index.php"><img src="../img/logo.png" style="width: 88px; height: 50px;"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -48,16 +48,16 @@ include('header.php');
                 <div class="collapse navbar-collapse ml-2" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto links">
                     <li class="nav-item mr-1">
-                        <a class="nav-link" href="../index.html">Home</a>
+                        <a class="nav-link" href="../index.php">Home</a>
                     </li>
                     <li class="nav-item mr-1">
-                      <a class="nav-link" href="../index.html">Why Laundry Matters</a>
+                      <a class="nav-link" href="../index.php">Why Laundry Matters</a>
                     </li>
                     <li class="nav-item mr-1">
-                        <a class="nav-link" href="../index.html">How it Works</a>
+                        <a class="nav-link" href="../index.php">How it Works</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="plans.html">Laundry Plans</a>
+                      <a class="nav-link" href="plans.php">Laundry Plans</a>
                     </li>
                   </ul>
                   <ul class="navbar-nav mr-5">
@@ -105,7 +105,7 @@ include('header.php');
                                     <li class="desc list-inline-item"><i class="mr-2 fa fa-check" style="color:#A5A5A5; font-size: 11px;"></i>Some text goes here</li>
                                     <li class="desc list-inline-item mr-2"><i class="mr-2 fa fa-check" style="color:#A5A5A5; font-size: 11px;"></i>Some text goes here</li>
                                 </ul>
-                              <a href="payment.html" class="btn btn-subgreen mt-4">Subscribe</a>
+                              <a href="payment.php" class="btn btn-subgreen mt-4">Subscribe</a>
                             </div>
                         </div>
                     </div>
@@ -124,7 +124,7 @@ include('header.php');
                                     <li class="desc list-inline-item"><i class="mr-2 fa fa-check" style="color:#A5A5A5; font-size: 11px;"></i>Some text goes here</li>
                                     <li class="desc list-inline-item mr-2"><i class="mr-2 fa fa-check" style="color:#A5A5A5; font-size: 11px;"></i>Some text goes here</li>
                                 </ul>
-                              <a href="payment.html" class="btn btn-subgreen mt-4">Order</a>
+                              <a href="payment.php" class="btn btn-subgreen mt-4">Order</a>
                             </div>
                         </div>
                     </div>
@@ -154,19 +154,19 @@ include('header.php');
                                             </div>
 
                                             <div class="form-label-group my-4">
-                                                <input type="email" name="email" id="email" class="form-control" placeholder="Email address" value=""  required autofocus>
-                                                <label for="email">Email address</label>
+                                                <input type="email" name="mail" id="mail" class="form-control" placeholder="Email address" value=""  required autofocus>
+                                                <label for="mail">Email address</label>
                                             </div>
             
                                             <div class="form-label-group my-4">
-                                                <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
-                                                <label for="password">Password</label>
+                                                <input type="password" name="pass" id="pass" class="form-control" placeholder="Password" required>
+                                                <label for="pass">Password</label>
                                             </div>
             
                                             <button class="btn btn-lg btn-primary btn-block btn-login font-weight-bold mb-3 text-center offset-3 mt-5" name="submit" type="submit">Continue</button>
                                             <div class="text-center">
-                                                <a class="small " href="reset.html">Forgot password?</a>
-                                                <a class="small " href="signup.html">Don't have an account?</a>
+                                                <a class="small " href="reset.php">Forgot password?</a>
+                                                <a class="small " href="#">Don't have an account?</a>
                                             </div>
                                         </form>
                                     </div>
@@ -194,38 +194,42 @@ include('header.php');
                                 </button>
                                 <div class="d-flex align-items-center my-5">
                                     <div class="col-md-9 col-lg-10 mx-auto">
-                                        <h3 class="login-heading mb-5">Sign in</h3>
-                                        <form method="post">
+                                        <h3 class="login-heading mb-5">Sign Up</h3>
+                                         <form method="post">
                                             <div class="form-label-group">
                                             </div>
                                             <div class="form-label-group my-4">
-                                                <input type="text" name="username" id="username" class="form-control" placeholder="Username" value="" required autofocus>
-                                                <span id="username_error" class ="form-error"></span>
-                                                <label for="username">First name</label>
+                                                <input type="text" name="fname" id="fname" class="form-control" placeholder="First name" value="" required autofocus>
+                                                <label for="fname">First name</label>
                                             </div>
-            
+
                                             <div class="form-label-group my-4">
-                                                <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
-                                                <span id="password_error" class ="form-error"></span>
-                                                <label for="password">Last name</label>
+                                                <input type="text" name="lname" id="lname" class="form-control" placeholder="Last name" required>
+                                                <label for="lname">Last name</label>
                                             </div>
-            
+
+
                                             <div class="form-label-group my-4">
-                                                <input type="email" name="email" id="email" class="form-control" placeholder="Email address" value=""  required>
+                                                <input type="number" name="mobile" id="mobile" class="form-control" placeholder="Confirm Password" required>
+                                                <span id="mobile_error" class ="form-error"></span>
+                                                <label for="mobile">Mobile number</label>
+                                            </div>
+
+                                            <div class="form-label-group my-4">
+                                                <input type="email" name="email" id="email" class="form-control" placeholder="Email address" required>
                                                 <span id="email_error" class ="form-error"></span>
                                                 <label for="email">Email address</label>
                                             </div>
-            
-            
+
                                             <div class="form-label-group my-4">
-                                                <input type="password" name="confirmPassword" id="confirmPassword" class="form-control" placeholder="Confirm Password" required>
-                                                <span id="confirm_password_error" class ="form-error"></span>
-                                                <label for="confirmPassword">Mobile number</label>
+                                                <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
+                                                <span id="password_error" class ="form-error"></span>
+                                                <label for="password">Password</label>
                                             </div>
                             
                                             <button class="btn btn-lg btn-primary btn-block btn-login font-weight-bold text-center offset-3 " name="submit" type="submit">Continue</button>
                                             <div class="text-center">
-                                                <a class="small mr-5" href="login.html">Already have an account? Login</a>
+                                                <a class="small mr-5" href="login.php">Already have an account? Login</a>
                                             </div>
                                         </form>
                                     </div>
@@ -278,7 +282,7 @@ include('header.php');
                 <div class="row">
 
                     <div class="col-md-4 mx-auto mt-5">
-                        <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" style="width: 88px; height: 60px;"></a>
+                        <a class="navbar-brand" href="../index.php"><img src="../img/logo.png" style="width: 88px; height: 60px;"></a>
                         <p class="dj font-weight-light">
                             Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                         </p>
@@ -290,13 +294,13 @@ include('header.php');
                         <h6 class="font-weight-bold text-uppercase h6 mt-3 mb-4 footer-header">Site Map</h6>
                         <ul class="list-unstyled">
                             <li>
-                            <a class="font-weight-light" href="../index.html">Home</a>
+                            <a class="font-weight-light" href="../index.php">Home</a>
                             </li>
                             <li>
-                            <a class="font-weight-light" href="../index.html">Why Laundry Matters</a>
+                            <a class="font-weight-light" href="../index.php">Why Laundry Matters</a>
                             </li>
                             <li>
-                            <a class="font-weight-light" href="plans.html">Laundry Plans</a>
+                            <a class="font-weight-light" href="plans.php">Laundry Plans</a>
                             </li>
                         </ul>
                     </div>
@@ -342,4 +346,4 @@ include('header.php');
 
 
 
-</html>
+</php>

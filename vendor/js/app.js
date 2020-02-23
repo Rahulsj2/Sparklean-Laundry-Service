@@ -106,21 +106,21 @@ $(document).ready(function () {
 
 $(function() {
 
-    $("#username_error").hide();
+    // $("#username_error").hide();
     $("#email_error").hide();
     $("#password_error").hide();
-    $("#confirm_password_error").hide();
+    $("#mobile_error").hide();
     $("#current_password_error").hide();
     
 
     var error_username = false;
     var error_email = false;
     var error_password = false;
-    var error_confirm_password = false;
+    var error_mobile = false;
     var error_current_password = false;
 
-    $("#username").focusout(function() {
-        check_username();
+    $("#mobile").focusout(function() {
+        check_number();
     });
 
     $("#email").focusout(function() {
@@ -140,15 +140,15 @@ $(function() {
     });
 
     
-    function check_username() {
-        var username_length = $("#username").val().length;
+    function check_number() {
+        var pattern = new RegExp(/^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/);;
 
-        if ( username_length < 5 || username_length > 20){
-            $("#username_error").html("Username should be between 5-20 characters");
-            $("#username_error").show();
-            error_username = true;
+        if (pattern.test($("#mobile").val())) {
+            $("#mobile_error").hide();
         } else{
-            $("#username_error").hide();
+            $("#mobile_error").html("Invalid phone number");
+            $("#mobile_error").show();
+            error_mobile = true;
         }
     }
 
@@ -171,7 +171,7 @@ $(function() {
         if(password_strength.test($("#password").val())){
             $("#password_error").hide();
         } else{
-            $("#password_error").html("Passwords must be 8 characters or longer, contain lowercase, uppercase, numeric and special characters");
+            $("#password_error").html("Weak password. Include alphanumeric and special characters");
             $("#password_error").show();
             error_password = true;
         }
@@ -190,30 +190,19 @@ $(function() {
         }
     }
 
-    function check_current_password() {
-        var password_strength = new RegExp(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/);
-
-        if(password_strength.test($("#password").val())){
-            $("#passwcurrent_password_errorord_error").hide();
-        } else{
-            $("#current_password_error").html("Password does not match the requirement");
-            $("#current_password_error").show();
-            error_password = true;
-        }
-    }
 
     $("#signupForm").submit(function() {
         error_username = false;
         error_email = false;
         error_password = false;
-        error_confirm_password = false;
+        error_mobile = false;
 
         check_username();
         check_email();
         check_password();
-        check_confirm_password();
+        check_number();
 
-        if (error_username == false && error_email == false && error_password == false && error_confirm_password == false){
+        if (error_username == false && error_email == false && error_password == false && error_mobile == false){
             return true;
         } else{
             return false;

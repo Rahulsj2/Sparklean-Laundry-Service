@@ -30,7 +30,7 @@
     <body>
 
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" style="width: 88px; height: 50px;"></a>
+            <a class="navbar-brand" href="../index.php"><img src="../img/logo.png" style="width: 88px; height: 50px;"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -38,16 +38,16 @@
             <div class="collapse navbar-collapse ml-2" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto links">
                 <li class="nav-item mr-1">
-                    <a class="nav-link" href="../index.html">Home</a>
+                    <a class="nav-link" href="../index.php">Home</a>
                 </li>
                 <li class="nav-item mr-1">
-                  <a class="nav-link" href="../index.html">Why Laundry Matters</a>
+                  <a class="nav-link" href="../index.php">Why Laundry Matters</a>
                 </li>
                 <li class="nav-item mr-1">
-                    <a class="nav-link" href="../index.html">How it Works</a>
+                    <a class="nav-link" href="../index.php">How it Works</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="../index.html">Laundry Plans</a>
+                  <a class="nav-link" href="../index.php">Laundry Plans</a>
                 </li>
               </ul>
             </div>
@@ -67,15 +67,20 @@
                                 <div class="form-label-group">
                                 </div>
                                 <div class="form-label-group my-4">
-                                    <input type="text" name="username" id="username" class="form-control" placeholder="Username" value="" required autofocus>
-                                    <span id="username_error" class ="form-error"></span>
-                                    <label for="username">First name</label>
+                                    <input type="text" name="fname" id="fname" class="form-control" placeholder="First name" value="" required autofocus>
+                                    <label for="fname">First name</label>
                                 </div>
 
                                 <div class="form-label-group my-4">
-                                    <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
-                                    <span id="password_error" class ="form-error"></span>
-                                    <label for="password">Last name</label>
+                                    <input type="text" name="lname" id="lname" class="form-control" placeholder="Last name" required>
+                                    <label for="lname">Last name</label>
+                                </div>
+
+
+                                <div class="form-label-group my-4">
+                                    <input type="number" name="mobile" id="mobile" class="form-control" placeholder="Confirm Password" required>
+                                    <span id="mobile_error" class ="form-error"></span>
+                                    <label for="mobile">Mobile number</label>
                                 </div>
 
                                 <div class="form-label-group my-4">
@@ -84,16 +89,15 @@
                                     <label for="email">Email address</label>
                                 </div>
 
-
                                 <div class="form-label-group my-4">
-                                    <input type="password" name="confirmPassword" id="confirmPassword" class="form-control" placeholder="Confirm Password" required>
-                                    <span id="confirm_password_error" class ="form-error"></span>
-                                    <label for="confirmPassword">Mobile number</label>
+                                    <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
+                                    <span id="password_error" class ="form-error"></span>
+                                    <label for="password">Password</label>
                                 </div>
                 
                                 <button class="btn btn-lg btn-primary btn-block btn-login font-weight-bold text-center offset-3 " name="submit" type="submit">Continue</button>
                                 <div class="text-center">
-                                    <a class="small mr-5" href="login.html">Already have an account? Login</a>
+                                    <a class="small mr-5" href="login.php">Already have an account? Login</a>
                                 </div>
                             </form>
                         </div>

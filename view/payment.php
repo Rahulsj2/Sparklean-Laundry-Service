@@ -2,8 +2,8 @@
 include('header.php');
 ?> -->
 
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE php>
+<php lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device=width, initial-scale=1, shrink-to-fit=no">
@@ -41,7 +41,7 @@ include('header.php');
         ------------------------>
         <section id="" class="plan">
             <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" style="width: 88px; height: 50px;"></a>
+                <a class="navbar-brand" href="../index.php"><img src="../img/logo.png" style="width: 88px; height: 50px;"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -49,16 +49,16 @@ include('header.php');
                 <div class="collapse navbar-collapse ml-2" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto links">
                     <li class="nav-item mr-1">
-                        <a class="nav-link" href="../index.html">Home</a>
+                        <a class="nav-link" href="../index.php">Home</a>
                     </li>
                     <li class="nav-item mr-1">
-                      <a class="nav-link" href="../index.html">Why Laundry Matters</a>
+                      <a class="nav-link" href="../index.php">Why Laundry Matters</a>
                     </li>
                     <li class="nav-item mr-1">
-                        <a class="nav-link" href="../index.html">How it Works</a>
+                        <a class="nav-link" href="../index.php">How it Works</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="plans.html">Laundry Plans</a>
+                      <a class="nav-link" href="plans.php">Laundry Plans</a>
                     </li>
                   </ul>
                 </div>
@@ -116,10 +116,10 @@ include('header.php');
                                             <label for="inputLname">Last name</label>
                                             <input type="text" class="form-control" id="inputLname" placeholder="">
                                         </div>
-                                        <div class="form-group">
+                                        <!-- <div class="form-group">
                                             <label for="inputEmail">Email address</label>
                                             <input type="text" class="form-control" id="inputEmail" placeholder="">
-                                        </div>
+                                        </div> -->
                                         <div class="form-group">
                                             <label for="inputDate">Pickup date</label>
                                             <input type="text" class="form-control" id="inputDate" placeholder="">
@@ -358,7 +358,7 @@ include('header.php');
                 <div class="row">
 
                     <div class="col-md-4 mx-auto mt-5">
-                        <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" style="width: 88px; height: 60px;"></a>
+                        <a class="navbar-brand" href="../index.php"><img src="../img/logo.png" style="width: 88px; height: 60px;"></a>
                         <p class="dj font-weight-light">
                             Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                         </p>
@@ -370,13 +370,13 @@ include('header.php');
                         <h6 class="font-weight-bold text-uppercase h6 mt-3 mb-4 footer-header">Site Map</h6>
                         <ul class="list-unstyled">
                             <li>
-                            <a class="font-weight-light" href="../index.html">Home</a>
+                            <a class="font-weight-light" href="../index.php">Home</a>
                             </li>
                             <li>
-                            <a class="font-weight-light" href="../index.html">Why Laundry Matters</a>
+                            <a class="font-weight-light" href="../index.php">Why Laundry Matters</a>
                             </li>
                             <li>
-                            <a class="font-weight-light" href="plans.html">Laundry Plans</a>
+                            <a class="font-weight-light" href="plans.php">Laundry Plans</a>
                             </li>
                         </ul>
                     </div>
@@ -425,4 +425,4 @@ include('header.php');
 
 
 
-</html>
+</php>

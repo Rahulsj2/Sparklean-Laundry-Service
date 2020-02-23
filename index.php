@@ -2,8 +2,8 @@
 include('header.php');
 ?> -->
 
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE php>
+<php lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device=width, initial-scale=1, shrink-to-fit=no">
@@ -39,7 +39,7 @@ include('header.php');
         <section id="home" class="hero bg-image" style="height: 727px; background-image: url(img/woman.jpg);  background-size:cover; background-position: center center;background-attachment:fixed;" data-section="home">
             <div class="overlay"></div>
             <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-                <a class="navbar-brand" href="index.html"><img src="img/logo.png" style="width: 88px; height: 50px;"></a>
+                <a class="navbar-brand" href="index.php"><img src="img/logo.png" style="width: 88px; height: 50px;"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -47,7 +47,7 @@ include('header.php');
                 <div class="collapse navbar-collapse ml-2" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item active mr-1">
-                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item mr-1">
                       <a class="nav-link" href="#laundry-matters">Why Laundry Matters</a>
@@ -56,15 +56,15 @@ include('header.php');
                         <a class="nav-link" href="#how-it-works">How it Works</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="view/plans.html">Laundry Plans</a>
+                      <a class="nav-link" href="view/plans.php">Laundry Plans</a>
                     </li>
                   </ul>
                   <ul class="navbar-nav mr-5">
                     <li class="nav-item mr-3"> 
-                        <a class="nav-link sign-in" href="view/login.html">Sign in</a>
+                        <a class="nav-link sign-in" href="view/login.php">Sign in</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-greenn my-sm-0 mr-5"  href="view/signup.html">Sign up</a>
+                        <a class="btn btn-greenn my-sm-0 mr-5"  href="view/signup.php">Sign up</a>
                     </li>
                   </ul>
                 </div>
@@ -77,7 +77,7 @@ include('header.php');
 							<div class="animate-box text-center">
 								<h2>"I wish I'd spent more time doing Laundry"</h2>
 								<p>said no college student ever</p>
-								<p><a href="view/plans.html" class="btn btn-green btn-lg btn-custom text-center">Start a Plan <i class="fa fa-arrow-circle-right ml-2 " style="font-size: 1.3rem;"></i></a></p>
+								<p><a href="view/plans.php" class="btn btn-green btn-lg btn-custom text-center">Start a Plan <i class="fa fa-arrow-circle-right ml-2 " style="font-size: 1.3rem;"></i></a></p>
 							</div>
 						</div>
 					</div>
@@ -125,7 +125,7 @@ include('header.php');
                         </div>
 
                         <div class="col-lg-6 my-auto px-5">     
-                            <a  class="btn btn-light shadow start" href="view/plans.html">Start a Plan</a>
+                            <a  class="btn btn-light shadow start" href="view/plans.php">Start a Plan</a>
                         </div>
                     </div>
                 </div>
@@ -384,7 +384,7 @@ include('header.php');
                 <div class="row">
 
                     <div class="col-md-4 mx-auto mt-5">
-                        <a class="navbar-brand" href="index.html"><img src="img/logo.png" style="width: 88px; height: 60px;"></a>
+                        <a class="navbar-brand" href="index.php"><img src="img/logo.png" style="width: 88px; height: 60px;"></a>
                         <p class="dj font-weight-light">
                             Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                         </p>
@@ -396,13 +396,13 @@ include('header.php');
                         <h6 class="font-weight-bold text-uppercase h6 mt-3 mb-4 footer-header">Site Map</h6>
                         <ul class="list-unstyled">
                             <li>
-                                <a class="font-weight-light" href="index.html">Home</a>
+                                <a class="font-weight-light" href="index.php">Home</a>
                             </li>
                             <li>
                                 <a class="font-weight-light" href="#laundry-matters">Why Laundry Matters</a>
                             </li>
                             <li>
-                                <a class="font-weight-light" href="view/plans.html">Laundry Plans</a>
+                                <a class="font-weight-light" href="view/plans.php">Laundry Plans</a>
                             </li>
                         </ul>
                     </div>
@@ -448,4 +448,4 @@ include('header.php');
 
 
 
-</html>
+</php>
